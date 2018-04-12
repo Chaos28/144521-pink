@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Раздобудько](https://up.htmlacademy.ru/adaptive/14/user/144521).
-* Наставник: `Неизвестно`.
+* Наставник: [Игорь Уваров](https://htmlacademy.ru/profile/id59956).
 
 ---
 
