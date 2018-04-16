@@ -46,83 +46,113 @@
 
   			<fieldset class="contest-form__group">
   				<legend class="visually-hidden">Персональная информация</legend>
-  				<label class="form-field__label" for="user-surname">Фамилия:</label>
-  				<input class="form-field__input-text" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *">
+  				<div class="form-field">
+	  				<label class="form-field__label" for="user-surname">Фамилия:</label>
+	  				<input class="form-field__input-text" type="text" name="user-surname" id="user-surname" placeholder="Укажите фамилию *">
+	  			</div>
+	  			
+	  			<div class="form-field">	
+	  				<label class="form-field__label" for="user-name">Имя:</label>
+	  				<input class="form-field__input-text" type="text" name="user-name" id="user-name" placeholder="Укажите имя *">
+	  			</div>
 
-  				<label class="form-field__label" for="user-name">Имя:</label>
-  				<input class="form-field__input-text" type="text" name="user-name" id="user-name" placeholder="Укажите имя *">
-
-  				<label class="form-field__label" for="user-patronymic">Отчество:</label>
-  				<input class="form-field__input-text" type="text" name="user-patronymic" id="user-patronymic" placeholder="Укажите отчество *">
+	  			<div class="form-field">
+	  				<label class="form-field__label" for="user-patronymic">Отчество:</label>
+	  				<input class="form-field__input-text" type="text" name="user-patronymic" id="user-patronymic" placeholder="Укажите отчество *">
+  				</div>
   			</fieldset>
 
   			<fieldset class="contest-form__group">
-  				<legend class="form-field__title">Ваши безбашенные достижения в путешествии</legend>
-  				<ul class="form-field__list">
-	  					<li class="form-field__item">
-	  						<input type="checkbox" name="selfie" id="selfie" checked>
-	  						<label class="form-field__label form-field__label--checkbox" for="selfie">Сделал селфи с акулой</label>
+  				<legend class="contest-form__title">Ваши безбашенные достижения в путешествии</legend>
+  				<ul class="contest_form__list">
+	  					<li class="contest_form__item">
+	  						<div class="form-field">
+		  						<input class="form-field__input form-field__input--checkbox" type="checkbox" name="selfie" id="selfie" checked>
+		  						<label class="form-field__label form-field__label--checkbox" for="selfie">Сделал селфи с акулой</label>
+	  						</div>
 	  					</li>
 
-	  					<li class="form-field__item">
-	  						<input type="checkbox" name="beach" id="beach" checked>
-	  						<label class="form-field__label form-field__label--checkbox" for="beach">Обгорел на пляже</label>
+	  					<li class="contest_form__item">
+	  						<div class="form-field">
+		  						<input class="form-field__input form-field__input--checkbox" type="checkbox" name="beach" id="beach" checked>
+		  						<label class="form-field__label form-field__label--checkbox" for="beach">Обгорел на пляже</label>
+	  						</div>
 	  					</li>
 
-	  					<li class="form-field__item">
-	  						<input type="checkbox" name="chuck" id="chuck">
-	  						<label class="form-field__label form-field__label--checkbox" for="chuck">Видел Чака Норриса</label>
+	  					<li class="contest_form__item">
+	  						<div class="form-field">
+		  						<input class="form-field__input form-field__input--checkbox" type="checkbox" name="chuck" id="chuck">
+		  						<label class="form-field__label form-field__label--checkbox" for="chuck">Видел Чака Норриса</label>
+	  						</div>
 	  					</li>
 
-	  					<li class="form-field__item">
-	  						<input type="checkbox" name="gift" id="gift">
-	  						<label class="form-field__label form-field__label--checkbox" for="gift">Накупил сувениров</label>
+	  					<li class="contest_form__item">
+	  						<div class="form-field">
+		  						<input class="form-field__input form-field__input--checkbox" type="checkbox" name="gift" id="gift">
+		  						<label class="form-field__label form-field__label--checkbox" for="gift">Накупил сувениров</label>
+	  						</div>
 	  					</li>
 
-	  					<li class="form-field__item">
-	  						<input type="checkbox" name="tower" id="tower" checked>
-	  						<label class="form-field__label form-field__label--checkbox" for="tower">Удержал башню</label>
+	  					<li class="contest_form__item">
+	  						<div class="form-field">
+		  						<input class="form-field__input form-field__input--checkbox" type="checkbox" name="tower" id="tower" checked>
+		  						<label class="form-field__label form-field__label--checkbox" for="tower">Удержал башню</label>
+	  						</div>
 	  					</li>
 
-	  					<li class="form-field__item">
-	  						<input type="checkbox" name="hotel" id="hotel">
-	  						<label class="form-field__label form-field__label--checkbox" for="hotel">Разгромил отель</label>
+	  					<li class="contest_form__item">
+	  						<div class="form-field">
+		  						<input class="form-field__input form-field__input--checkbox" type="checkbox" name="hotel" id="hotel">
+		  						<label class="form-field__label form-field__label--checkbox" for="hotel">Разгромил отель</label>
+	  						</div>
 	  					</li>
 	  			</ul>
  			</fieldset>
 				
 	  		<fieldset class="contest-form__group">
 	  			<legend class="visually-hidden">Контактные данные</legend>
-	  			<label class="form-field__label" for="user-phonenumber">Номер телефона</label>
-	  			<input type="tel" name="user-phonenumber" id="user-phonenumber" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+	  			<div class="form-field">
+		  			<label class="form-field__label" for="user-phonenumber">Номер телефона</label>
+		  			<input class="form-field__input-text" type="tel" name="user-phonenumber" id="user-phonenumber" placeholder="Номер, пожалуйста" pattern="[0-9]{1}-[0-9]{3}-[0-9]{3}">
+		  		</div>
 
-  				<label class="form-field__label" for="email">Адрес почты</label>
-  				<input type="email" name="email" id="email" placeholder="Введите почту *">
+		  		<div class="form-field">
+	  				<label class="form-field__label" for="email">Адрес почты</label>
+	  				<input class="form-field__input-text" type="email" name="email" id="email" placeholder="Введите почту *">
+  				</div>
 	  		</fieldset>
 	  		
 	  		<fieldset class="contest-form__group">
-	  			<legend class="form-field__title">С каким приложением путешествовали?</legend>
-	  			<ul class="form-field__list">
-  						<li class="form-field__item">
-  							<input type="radio" name="platform" id="ios" value="iOS" checked>
-	  						<label class="form-field__label form-field__label--radio" for="ios">Pink для iOS</label>
+	  			<legend class="contest-form__title">С каким приложением путешествовали?</legend>
+	  			<ul class="contest_form__list">
+  						<li class="contest_form__item">
+  							<div class="form-field">
+	  							<input class="form-field__input form-field__input--radio" type="radio" name="platform" id="ios" value="iOS" checked>
+		  						<label class="form-field__label form-field__label--radio" for="ios">Pink для iOS</label>
+		  					</div>
   						</li>
 
-  						<li class="form-field__item">
-  							<input type="radio" name="platform" id="android" value="Android">
-	  						<label class="form-field__label form-field__label--radio" for="android">Pink на Android</label>
+  						<li class="contest_form__item">
+  							<div class="form-field">
+	  							<input class="form-field__input form-field__input--radio" type="radio" name="platform" id="android" value="Android">
+		  						<label class="form-field__label form-field__label--radio" for="android">Pink на Android</label>
+		  					</div>
   						</li>
 
-  						<li class="form-field__item">
-  							<input type="radio" name="platform" id="windows" value="Windows Phone">
-	  						<label class="form-field__label form-field__label--radio" for="windows">Windows Phone</label>
+  						<li class="contest_form__item">
+  							<div class="form-field">
+	  							<input class="form-field__input form-field__input--radio" type="radio" name="platform" id="windows" value="Windows Phone">
+		  						<label class="form-field__label form-field__label--radio" for="windows">Windows Phone</label>
+		  					</div>
   						</li>
   					</ul>
   			</fieldset>
 	  		
   			<div class="contest-form__group">
-  				<p class="form-field__title">Опишите свои эмоции</p>
-  				<textarea class="form-field__comment-text" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+  				<label class="contest-form__title">Опишите свои эмоции</label>
+  				<div class="form-field">
+  					<textarea class="form-field__comment-text" name="comment">Можно прям в красках, не стесняясь в выражениях</textarea>
+  				</div>
   			</div>
 
 			<button class="contest-form__button" type="submit">Отправить форму</button>
