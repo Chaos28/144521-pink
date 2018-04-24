@@ -2,13 +2,17 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
     <title>Фотографии пользователей сервисы PINK</title>
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo">
-        <img class="page-header__logo-image" src="" width="75" height="22" alt="PINK">
-      </a>
+
+      <div class="page-header__logo">
+        <a>
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK">
+        </a>
+      </div>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
         <div class="main-nav__wrapper">
@@ -33,6 +37,7 @@
       </nav>
 
     </header>
+
     <main class="page-main">
       <h1 class="visually-hidden">Фотографии пользователей</h1>
       <div class="inner-page-intro">Фотографии пользователей</div>
@@ -42,7 +47,7 @@
         <p class="users-photos__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
         <ul class="users-photos__list">
           <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="http://placehold.it/150x100">
+            <img class="user-photo__picture" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
             <div class="user-photo__description">
               <div class="user-photo__comment">
                 <cite class="user-photo__author">Анна</cite>
@@ -56,7 +61,7 @@
           </li>
 
           <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="http://placehold.it/150x100">
+            <img class="user-photo__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
             <div class="user-photo__description">
               <div class="user-photo__comment">
                 <cite class="user-photo__author">Левон</cite>
@@ -70,7 +75,7 @@
           </li>
 
           <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="http://placehold.it/150x100">
+            <img class="user-photo__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
             <div class="user-photo__description">
               <div class="user-photo__comment">
                 <cite class="user-photo__author">Антон</cite>
@@ -84,7 +89,7 @@
           </li>
 
           <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="http://placehold.it/150x100">
+            <img class="user-photo__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно">
             <div class="user-photo__description">
               <div class="user-photo__comment">
                 <cite class="user-photo__author">Борис</cite>
@@ -98,7 +103,7 @@
           </li>
 
           <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="http://placehold.it/150x100">
+            <img class="user-photo__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка">
             <div class="user-photo__description">
               <div class="user-photo__comment">
                 <cite class="user-photo__author">Сергей</cite>
@@ -112,7 +117,7 @@
           </li>
 
           <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="http://placehold.it/150x100">
+            <img class="user-photo__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
             <div class="user-photo__description">
               <div class="user-photo__comment">
                 <cite class="user-photo__author">Максим</cite>
@@ -126,7 +131,7 @@
           </li>
 
           <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="http://placehold.it/150x100">
+            <img class="user-photo__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолёта">
             <div class="user-photo__description">
               <div class="user-photo__comment">
                 <cite class="user-photo__author">Надежда</cite>
@@ -144,7 +149,7 @@
       </div>
       <section class="photo-upload">
         <p class="photo-upload__description">Затми их всех! Выкладывайте все, что накопилось на телефоне!</p>
-        <img src="http://placehold.it/150x100">
+        <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
         <form class="photo-upload__menu">
           <button class="photo-upload__button photo-upload__button--crop" type="button">Вырезать</button>
           <button class="photo-upload__button photo-upload__button--fill" type="button">Цвет</button>
@@ -159,7 +164,7 @@
 
     <footer class="page-footer">
       <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="" width="75" height="22" alt="PINK">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
       </a>
 
       <ul class="social-list">
@@ -176,10 +181,10 @@
         </li>
       </ul>
 
-      <p>
+      <p class="developer">
         Разработано
         <a href="http://htmlacademy.ru">
-          <img class="developer__logo" src="" width="27" height="34" alt="HTML Academy">
+          <img class="developer__logo" src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
         </a>
       </p>
     </footer>
