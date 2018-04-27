@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>Скачать приложение Pink</title>
   </head>
@@ -42,6 +43,7 @@
       <h1 class="visually-hidden">Приложение PINK для общения по Сети</h1>
 
       <section class="download-menu">
+        <p class="download-menu__title">Взгляните на жизнь иначе!</p>
         <a class="download-menu__download-link">Скачать приложение</a>
         <ul class="download-menu__platform">
           <li class="download-menu__item download-menu__item--apple">
@@ -56,12 +58,12 @@
             <a>Windows</a>
           </li>
         </ul>
-        <p>Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        <p class="download-menu__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
       </section>
 
       <div class="proposal-section">
-        <p>Устали от серости мегаполиса?</p>
-        <p>Нам есть, что предложить</p>
+        <p class="proposal-section__question">Устали от серости мегаполиса?</p>
+        <p class="proposal-section__answer">Нам есть, что вам предложить!</p>
       </div>
 
       <section class="features">
@@ -83,23 +85,30 @@
             <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
-        <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение PINK">
+        <!-- <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение PINK"> -->
         </div>
       </section>
 
       <section class="reviews">
         <div class="reviews__wrapper slider">
         <h2 class="visually-hidden">Отзывы пользователей</h2>
+        <section class="reviews-proof">
+          <div class="reviews-proof__container">
+          <h3 class="reviews-proof__title">Эффект на 24 часа!</h3>
+          <p class="reviews-proof__description">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+          <a href="#" class="reviews-proof__source">Узнать больше об исследовании</a>
+          </div>
+        </section>
         <div class="reviews__list slider__list">
           <ul class="reviews__list">
             <li class="reviews__item">
               <blockquote class="slider__item">
                 <cite class="reviews__author">Николай Петров</cite>
+                <span class="reviews__author-job">25 лет, водитель трамвая</span>
                 <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
               </blockquote>
             </li>
-
-            <li class="reviews__item">
+            <!-- <li class="reviews__item">
               <blockquote class="slider__item">
                 <cite class="reviews__author">Павел Кочерыжкин</cite>
                 <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
@@ -111,7 +120,7 @@
                 <cite class="reviews__author">Иван Иванов</cite>
                 <p class="reviews__text">"Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!"</p>
               </blockquote>
-            </li>
+            </li> -->
           </ul>
         </div>
         <p class="reviews__toggles slider__toggles">
@@ -127,7 +136,10 @@
         <div class="prices__wrapper slider">
         <table class="prices__list">
           <tr>
+            <!-- <td></td> -->
+            <!-- <td class="prices__title">База <span class="prices__cost">1,99 USD</span></td> -->
             <td class="prices__title">Стандарт <span class="prices__cost">3,99 USD</span></td>
+            <!-- <td class="prices__title">Анлим <span class="prices__cost">9,99 USD</span></td> -->
           </tr>
           <tr>
             <td class="prices__value">Розовый фильтр</td>
@@ -150,7 +162,7 @@
     </main>
 
     <footer class="page-footer">
-      <div class="page-footer__contacts contacts">
+      <div class="contacts">
         <b class="contacts__message">Остались вопросы? Свяжитесь с нами!</b>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -158,18 +170,47 @@
             <p class="contacts__description">+7 (812) 555-66-66</p>
           </li>
 
-          <li class="contacts__item">
+          <li class="contacts__item contacts__item--order">
             <h3 class="contacts__title">Пишите:</h3>
             <p class="contacts__description">mail@htmlacademy.ru</p>
           </li>
 
           <li class="contacts__item">
             <h3 class="contacts__title">Приезжайте в гости:</h3>
-            <p class="contacts__description">ул. Большая Конюшенная, 19/8</p>
+            <p class="contacts__description">ул. Большая<br>
+            Конюшенная, 19/8</p>
           </li>
         </ul>
       </div>
       <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта расположения офиса">
+
+      <div class="footer-end">
+        <div class="footer-end__pink-logo">
+          <a>
+            <img src="../img/logo-pink-blue-mobile.svg" width="146" height="40" alt="PINK">
+          </a>
+        </div>
+        <ul class="social-list">
+          <li class="social-list__item social-list__item--twitter">
+            <a href="#">Twitter</a>
+          </li>
+
+          <li class="social-list__item social-list__item--facebook">
+            <a href="#">Facebook</a>
+          </li>
+
+          <li class="social-list__item social-list__item--youtube">
+            <a href="#">Youtube</a>
+          </li>
+        </ul>
+        <div class="developer">
+          <span>Разработано
+            <a href="http://htmlacademy.ru">
+              <img class="developer__logo" src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
+            </a>
+          </span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>

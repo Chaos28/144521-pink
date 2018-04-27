@@ -1,24 +1,74 @@
 /*блок reviews*/
 
 .reviews {
-  outline: 5px solid brown;
   background-color: #ffffff;
 }
 
 .reviews__list {
+  margin: 0;
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .reviews__author {
+  display: block;
   font-size: 18px;
   line-height: 30px;
   font-style: normal;
   font-weight: 700;
   color: #000000;
+  text-align: center;
 }
 
-.reviews__text {
+.reviews__author-job {
+  display: none;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+}
+
+.reviews__text {
+  width: 280px;
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645;
+  text-align: center;
+}
+
+.slider__item {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__text {
+    width: 620px;
+    order: -1;
+  }
+
+  .reviews__author-job {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews__author {
+    font-size: 24px;
+    line-height: 30px;
+  }
+
+  .reviews__text {
+    width: 620px;
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .reviews__author-job {
+    font-size: 18px;
+  }
 }
