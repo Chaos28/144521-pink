@@ -10,6 +10,7 @@
   margin: 0;
   display: flex;
   flex-direction: column;
+  border: none;
 }
 
 .contest-form__group:nth-child(odd) {
@@ -33,7 +34,7 @@
 }
 
 .contest-form__title--contacts {
-  display: none;
+  visibility: hidden;
 }
 
 .contest-form__group.contest-form__group--submit {
@@ -58,6 +59,9 @@
 }
 
 @media (min-width: @tablet-width) {
+  .contest-form__group {
+    border: 2px solid #e5e5e5;
+  }
 
   .contest-form__group:nth-child(odd),
   .contest-form__group:nth-child(even) {
@@ -96,7 +100,7 @@
   }
 
   .contest-form__title--contacts {
-    display: inline;
+    visibility: visible;
   }
 }
 
@@ -139,6 +143,7 @@
   .contest-form__group--review {
     width: 940px;
   }
+
   .contest-form__group--submit {
     width: 940px;
   }
