@@ -1,14 +1,52 @@
 /*блок content-proposal*/
 
 .content-proposal__header {
+  display: block;
+  margin: 0 auto;
+  width: 230px;
   font-size: 24px;
   font-weight: 300;
   line-height: normal;
-  color: #ffffff;
+  color: black;
+  /*временный цвет, будет #fff*/
+  text-align: center;
 }
 
 .content-proposal__main {
+  width: 280px;
+  margin: 0 auto;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+}
+
+.content-proposal__main--extra {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .content-proposal__header {
+    width: 480px;
+    font-size: 50px;
+  }
+
+  .content-proposal__main {
+    width: 495px;
+    font-size: 18px;
+  }
+
+  .content-proposal__main--extra {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .content-proposal__header {
+    width: 750px;
+  }
+
+  .content-proposal__main {
+    width: 765px;
+  }
 }

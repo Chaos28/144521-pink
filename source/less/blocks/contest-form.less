@@ -1,7 +1,15 @@
 /*блок contest-form*/
 
+.contest-form {
+  display: flex;
+  flex-direction: column;
+}
+
 .contest-form__group {
-  outline: 3px solid red;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .contest-form__group:nth-child(odd) {
@@ -21,6 +29,15 @@
   line-height: 18px;
   text-transform: uppercase;
   color: #d22856;
+  text-align: center;
+}
+
+.contest-form__title--contacts {
+  display: none;
+}
+
+.contest-form__group.contest-form__group--submit {
+  background-color: #ffffff;
 }
 
 .contest-form__important {
@@ -28,8 +45,101 @@
   line-height: 30px;
   text-transform: uppercase;
   color: #283645;
+  text-align: center;
+}
+
+.contest-form__button {
+  width: 280px;
+  margin: 0 auto;
 }
 
 .contest-form__important--star {
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+
+  .contest-form__group:nth-child(odd),
+  .contest-form__group:nth-child(even) {
+    background-color: #ffffff;
+  }
+
+  .contest-form__group--personal {
+    order: 1;
+  }
+
+  .contest-form__group--platform {
+    order: 2;
+  }
+
+  .contest-form__group--contacts {
+    order: 3;
+  }
+
+  .contest-form__group--achievement {
+    order: 4;
+  }
+
+  .contest-form__group--review {
+    order: 5;
+  }
+
+  .contest-form__group--submit {
+    order: 6;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contest-form__button {
+    margin: 0;
+    width: 300px;
+  }
+
+  .contest-form__title--contacts {
+    display: inline;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contest-form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 940px;
+    margin: 0 auto;
+  }
+
+  .contest-form__group--personal {
+    width: 440px;
+  }
+
+  .contest-form__group--platform {
+    width: 440px;
+  }
+
+  .contest-form__group--contacts {
+    width: 940px;
+    flex-direction: row;
+  }
+
+  .contest-form__group--achievement {
+    width: 940px;
+  }
+
+  .contest-form__group--achievement .contest-form__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .contest-form__list .contest-form__item {
+    width: 260px;
+  }
+
+  .contest-form__group--review {
+    width: 940px;
+  }
+  .contest-form__group--submit {
+    width: 940px;
+  }
 }

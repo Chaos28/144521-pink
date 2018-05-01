@@ -1,14 +1,43 @@
 /*блок photo-upload*/
 
 .photo-upload {
-  background-color: #f2f2f2;
+  display: flex;
+  flex-direction: column;
 }
 
 .photo-upload__description {
-  background-color: #ffffff;
   font-size: 14px;
   line-height: 30px;
   color: #283645;
+  text-align: center;
+}
+
+.photo-upload__wrapper {
+  background-color: #f2f2f2;
+}
+
+.photo-upload__menu {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-upload__form {
+  display: flex;
+  flex-direction: column;
+}
+
+.photo-upload__correction {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.photo-upload__result {
+  display: flex;
+  flex-direction: column;
+  width: 280px;
 }
 
 .photo-upload__button--submit {
@@ -24,4 +53,37 @@
   font-weight: 700;
   color: #283645;
   opacity: 0.1;
+}
+
+@media (min-width: @tablet-width) {
+  .photo-upload__description {
+    font-size: 18px;
+  }
+
+  .photo-upload__menu {
+    width: 620px;
+    margin: 0 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .photo-upload__form {
+    justify-content: space-between;
+  }
+
+  .photo-upload__correction {
+    flex-direction: column;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo-upload__menu {
+    width: 800px;
+  }
+
+  .photo-upload__result {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }

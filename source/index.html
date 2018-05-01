@@ -8,34 +8,35 @@
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a>
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item main-nav__item--active">
+                <a>Главная</a>
+              </li>
 
-      <div class="page-header__logo">
-        <a>
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK">
-        </a>
+              <li class="main-nav__item">
+                <a href="photo.html">Фотографии</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item site-list__item--active">
-            <a>Главная</a>
-          </li>
-
-          <li class="site-list__item">
-            <a href="photo.html">Фотографии</a>
-          </li>
-
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-      </nav>
 
     </header>
 
@@ -43,22 +44,24 @@
       <h1 class="visually-hidden">Приложение PINK для общения по Сети</h1>
 
       <section class="download-menu">
-        <p class="download-menu__title">Взгляните на жизнь иначе!</p>
-        <a class="download-menu__download-link">Скачать приложение</a>
-        <ul class="download-menu__platform">
-          <li class="download-menu__item download-menu__item--apple">
-            <a>Apple</a>
-          </li>
+        <div class="download-menu__wrapper">
+          <p class="download-menu__title">Взгляните на жизнь иначе!</p>
+          <a class="download-menu__download-link">Скачать приложение</a>
+          <ul class="download-menu__platform">
+            <li class="download-menu__item download-menu__item--apple">
+              <a>Apple</a>
+            </li>
 
-          <li class="download-menu__item download-menu__item--android">
-            <a>Android</a>
-          </li>
+            <li class="download-menu__item download-menu__item--android">
+              <a>Android</a>
+            </li>
 
-          <li class="download-menu__item download-menu__item--windows">
-            <a>Windows</a>
-          </li>
-        </ul>
-        <p class="download-menu__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+            <li class="download-menu__item download-menu__item--windows">
+              <a>Windows</a>
+            </li>
+          </ul>
+          <p class="download-menu__description">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+        </div>
       </section>
 
       <div class="proposal-section">
@@ -68,24 +71,26 @@
 
       <section class="features">
         <div class="features__wrapper">
-        <h2 class="visually-hidden">Преимущества приложения</h2>
-        <ul class="features__list">
-          <li class="features__item">
-            <h3 class="features__title">Поднимает настроение</h3>
-            <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
-          </li>
+          <h2 class="visually-hidden">Преимущества приложения</h2>
+          <ul class="features__list">
+            <li class="features__item">
+              <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение PINK">
+              <h3 class="features__title">Поднимает настроение</h3>
+              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            </li>
 
-          <li class="features__item">
-            <h3 class="features__title">Меняет мир вокруг</h3>
-            <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
-          </li>
+            <li class="features__item">
+              <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение PINK">
+              <h3 class="features__title">Меняет мир вокруг</h3>
+              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+            </li>
 
-          <li class="features__item">
-            <h3 class="features__title">Заводит новых друзей</h3>
-            <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
-          </li>
-        </ul>
-        <!-- <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение PINK"> -->
+            <li class="features__item">
+              <img class="features__image" src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Приложение PINK">
+              <h3 class="features__title">Заводит новых друзей</h3>
+              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -159,10 +164,7 @@
         </p>
         </div>
       </section>
-    </main>
-
-    <footer class="page-footer">
-      <div class="contacts">
+      <section class="contacts">
         <b class="contacts__message">Остались вопросы? Свяжитесь с нами!</b>
         <ul class="contacts__list">
           <li class="contacts__item">
@@ -181,35 +183,35 @@
             Конюшенная, 19/8</p>
           </li>
         </ul>
+        <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта расположения офиса">
+      </section>
+    </main>
+
+    <footer class="page-footer page-footer--index">
+      <div class="page-footer__pink-logo">
+        <a>
+          <img src="../img/logo-pink-blue-mobile.svg" width="146" height="40" alt="PINK">
+        </a>
       </div>
-      <img src="img/bg-map-mobile@1x.png" width="320" height="645" alt="Карта расположения офиса">
+      <ul class="social-list">
+        <li class="social-list__item social-list__item--twitter">
+          <a href="#">Twitter</a>
+        </li>
 
-      <div class="footer-end">
-        <div class="footer-end__pink-logo">
-          <a>
-            <img src="../img/logo-pink-blue-mobile.svg" width="146" height="40" alt="PINK">
+        <li class="social-list__item social-list__item--facebook">
+          <a href="#">Facebook</a>
+        </li>
+
+        <li class="social-list__item social-list__item--youtube">
+          <a href="#">Youtube</a>
+        </li>
+      </ul>
+      <div class="developer">
+        <span>Разработано
+          <a href="http://htmlacademy.ru">
+            <img class="developer__logo" src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
           </a>
-        </div>
-        <ul class="social-list">
-          <li class="social-list__item social-list__item--twitter">
-            <a href="#">Twitter</a>
-          </li>
-
-          <li class="social-list__item social-list__item--facebook">
-            <a href="#">Facebook</a>
-          </li>
-
-          <li class="social-list__item social-list__item--youtube">
-            <a href="#">Youtube</a>
-          </li>
-        </ul>
-        <div class="developer">
-          <span>Разработано
-            <a href="http://htmlacademy.ru">
-              <img class="developer__logo" src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
-            </a>
-          </span>
-        </div>
+        </span>
       </div>
     </footer>
   </body>

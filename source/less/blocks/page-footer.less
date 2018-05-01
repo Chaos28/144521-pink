@@ -1,7 +1,19 @@
 .page-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  // min-height: 612px;
-  // background-image: url("../img/bg-map-mobile@1x.png");
-  // background-repeat: no-repeat;
-  // background-position: 50% 50%;
+.page-footer--index {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer,
+  .page-footer--index {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
 }

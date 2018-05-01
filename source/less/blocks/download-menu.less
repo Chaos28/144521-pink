@@ -4,7 +4,6 @@
   justify-content: center;
   align-items: center;
   min-width: 280px;
-  outline: 5px solid green;
   background-color: #1d2631;
   min-height: 271px;
   font-size: 14px;
@@ -15,7 +14,6 @@
 
 .download-menu__title {
   display: none;
-  font-size: 40px;
   font-weight: 300;
   color: #ffffff;
   padding: 0;
@@ -39,8 +37,6 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
-
-  outline: 1px solid green;
 }
 
 .download-menu__description {
@@ -56,6 +52,16 @@
 
   .download-menu__title {
     display: block;
+    font-size: 40px;
     width: 200px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-menu__title {
+    font-size: 50px;
+    width: 240px;
   }
 }

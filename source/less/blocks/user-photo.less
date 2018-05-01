@@ -21,6 +21,15 @@
   line-height: 24px;
   font-weight: 400;
   color: #283645;
+  margin: 0;
+  margin-bottom: 18px;
+}
+
+.user-photo__description {
+  display: flex;
+  flex-direction: column;
+  margin-left: 18px;
+  margin-top: 25px;
 }
 
 .user-photo__like {
@@ -28,4 +37,20 @@
   line-height: 24px;
   font-weight: 400;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .user-photo__description--first-description {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .user-photo__text--first-text {
+    order: 1;
+  }
+
+  .user-photo__like-form--first-form {
+    margin-right: 27px;
+  }
 }

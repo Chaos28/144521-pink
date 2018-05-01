@@ -2,39 +2,41 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
     <title>Фотографии пользователей сервисы PINK</title>
   </head>
   <body>
     <header class="page-header">
+      <div class="page-header__wrapper">
+        <div class="page-header__logo">
+          <a>
+            <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <ul class="main-nav__list">
+              <li class="main-nav__item">
+                <a href="index.html">Главная</a>
+              </li>
 
-      <div class="page-header__logo">
-        <a>
-          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="23" alt="PINK">
-        </a>
+              <li class="main-nav__item main-nav__item--active">
+                <a>Фотографии</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="form.html">Конкурс</a>
+              </li>
+
+              <li class="main-nav__item">
+                <a href="#">HTML Academy</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </div>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
-        <div class="main-nav__wrapper">
-        <ul class="main-nav__list site-list">
-          <li class="site-list__item">
-            <a href="index.html">Главная</a>
-          </li>
-
-          <li class="site-list__item site-list__item--active">
-            <a>Фотографии</a>
-          </li>
-
-          <li class="site-list__item">
-            <a href="form.html">Конкурс</a>
-          </li>
-
-          <li class="site-list__item">
-            <a href="#">HTML Academy</a>
-          </li>
-        </ul>
-      </div>
-      </nav>
 
     </header>
 
@@ -42,131 +44,136 @@
       <h1 class="visually-hidden">Фотографии пользователей</h1>
       <div class="inner-page-intro">Фотографии пользователей</div>
       <div class="main-nav__wrapper">
-
-      <section class="users-photos">
-        <p class="users-photos__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
-        <ul class="users-photos__list">
-          <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
-            <div class="user-photo__description">
-              <div class="user-photo__comment">
-                <cite class="user-photo__author">Анна</cite>
-                <time class="user-photo__time">(5 минут назад)</time>
-                <blockquote class="user-photo__text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+        <section class="users-photos">
+          <p class="users-photos__description">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</p>
+          <ul class="users-photos__list">
+            <li class="users-photos__item users-photos__item--first-item user-photo">
+              <img class="user-photo__picture" src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Панорама">
+              <div class="user-photo__description user-photo__description--first-description">
+                <div class="user-photo__comment">
+                  <cite class="user-photo__author">Анна</cite>
+                  <time class="user-photo__time">(5 минут назад)</time>
+                </div>
+                <blockquote class="user-photo__text user-photo__text--first-text">Прыгать или нет? Напишите в комментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</blockquote>
+                <form class="user-photo__like-form user-photo__like-form--first-form">
+                  <button class="user-photo__like" type="button">Нравится: 215</button>
+                </form>
               </div>
-              <form class="user-photo__like-form">
-                <button class="user-photo__like" type="button">Нравится: 215</button>
-              </form>
-            </div>
-          </li>
-
-          <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
-            <div class="user-photo__description">
-              <div class="user-photo__comment">
-                <cite class="user-photo__author">Левон</cite>
-                <time class="user-photo__time">(5 часов назад)</time>
+            </li>
+            <li class="users-photos__item user-photo">
+              <img class="user-photo__picture" src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Автомобиль">
+              <div class="user-photo__description">
+                <div class="user-photo__comment">
+                  <cite class="user-photo__author">Левон</cite>
+                  <time class="user-photo__time">(5 часов назад)</time>
+                </div>
                 <blockquote class="user-photo__text">Вчера он на луну летал, сегодня в руки к нам попал.</blockquote>
+                <form class="user-photo__like-form">
+                  <button class="user-photo__like" type="button">Нравится: 356</button>
+                </form>
               </div>
-              <form class="user-photo__like-form">
-                <button class="user-photo__like" type="button">Нравится: 356</button>
-              </form>
-            </div>
-          </li>
+            </li>
 
-          <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
-            <div class="user-photo__description">
-              <div class="user-photo__comment">
-                <cite class="user-photo__author">Антон</cite>
-                <time class="user-photo__time">(12 часов назад)</time>
+            <li class="users-photos__item user-photo">
+              <img class="user-photo__picture" src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Барабаны">
+              <div class="user-photo__description">
+                <div class="user-photo__comment">
+                  <cite class="user-photo__author">Антон</cite>
+                  <time class="user-photo__time">(12 часов назад)</time>
+                </div>
                 <blockquote class="user-photo__text">Соседи будут рады!</blockquote>
+                <form class="user-photo__like-form">
+                  <button class="user-photo__like" type="button">Нравится: 666</button>
+                </form>
               </div>
-              <form class="user-photo__like-form">
-                <button class="user-photo__like" type="button">Нравится: 666</button>
-              </form>
-            </div>
-          </li>
+            </li>
 
-          <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно">
-            <div class="user-photo__description">
-              <div class="user-photo__comment">
-                <cite class="user-photo__author">Борис</cite>
-                <time class="user-photo__time">(20 часов назад)</time>
+            <li class="users-photos__item user-photo">
+              <img class="user-photo__picture" src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Окно">
+              <div class="user-photo__description">
+                <div class="user-photo__comment">
+                  <cite class="user-photo__author">Борис</cite>
+                  <time class="user-photo__time">(20 часов назад)</time>
+                </div>
                 <blockquote class="user-photo__text">Здесь могла быть ваша цитата о высоком и вечном.</blockquote>
+                <form class="user-photo__like-form">
+                  <button class="user-photo__like" type="button">Нравится: 215</button>
+                </form>
               </div>
-              <form class="user-photo__like-form">
-                <button class="user-photo__like" type="button">Нравится: 215</button>
-              </form>
-            </div>
-          </li>
+            </li>
 
-          <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка">
-            <div class="user-photo__description">
-              <div class="user-photo__comment">
-                <cite class="user-photo__author">Сергей</cite>
-                <time class="user-photo__time">(25 часов назад)</time>
+            <li class="users-photos__item user-photo">
+              <img class="user-photo__picture" src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Ярмарка">
+              <div class="user-photo__description">
+                <div class="user-photo__comment">
+                  <cite class="user-photo__author">Сергей</cite>
+                  <time class="user-photo__time">(25 часов назад)</time>
+                </div>
                 <blockquote class="user-photo__text">Самая кубанская в мире!</blockquote>
+                <form class="user-photo__like-form">
+                  <button class="user-photo__like" type="button">Нравится: 4</button>
+                </form>
               </div>
-              <form class="user-photo__like-form">
-                <button class="user-photo__like" type="button">Нравится: 4</button>
-              </form>
-            </div>
-          </li>
+            </li>
 
-          <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
-            <div class="user-photo__description">
-              <div class="user-photo__comment">
-                <cite class="user-photo__author">Максим</cite>
-                <time class="user-photo__time">(40 часов назад)</time>
+            <li class="users-photos__item user-photo">
+              <img class="user-photo__picture" src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Фото">
+              <div class="user-photo__description">
+                <div class="user-photo__comment">
+                  <cite class="user-photo__author">Максим</cite>
+                  <time class="user-photo__time">(40 часов назад)</time>
+                </div>
                 <blockquote class="user-photo__text">Где снего-то?</blockquote>
-              </div>
-              <form class="user-photo__like-form">
+                <form class="user-photo__like-form">
                 <button class="user-photo__like" type="button">Нравится: 150</button>
-              </form>
-            </div>
-          </li>
-
-          <li class="users-photos__item user-photo">
-            <img class="user-photo__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолёта">
-            <div class="user-photo__description">
-              <div class="user-photo__comment">
-                <cite class="user-photo__author">Надежда</cite>
-                <time class="user-photo__time">(45 часов назад)</time>
-                <blockquote class="user-photo__text">Всем GM и взаимные лайки!</blockquote>
+                </form>
               </div>
-              <form class="user-photo__like-form">
-                <button class="user-photo__like" type="button">Нравится: 2560</button>
-              </form>
-            </div>
-          </li>
-        </ul>
-      </section>
+            </li>
 
+            <li class="users-photos__item user-photo">
+              <img class="user-photo__picture" src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Крыло самолёта">
+              <div class="user-photo__description">
+                <div class="user-photo__comment">
+                  <cite class="user-photo__author">Надежда</cite>
+                  <time class="user-photo__time">(45 часов назад)</time>
+                </div>
+                <blockquote class="user-photo__text">Всем GM и взаимные лайки!</blockquote>
+                <form class="user-photo__like-form">
+                <button class="user-photo__like" type="button">Нравится: 2560</button>
+                </form>
+              </div>
+            </li>
+          </ul>
+        </section>
       </div>
       <section class="photo-upload">
-        <p class="photo-upload__description">Затми их всех! Выкладывайте все, что накопилось на телефоне!</p>
-        <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
-        <form class="photo-upload__menu">
-          <button class="photo-upload__button photo-upload__button--crop" type="button">Вырезать</button>
-          <button class="photo-upload__button photo-upload__button--fill" type="button">Цвет</button>
-          <button class="photo-upload__button photo-upload__button--contrast" type="button">Контраст</button>
-          <!-- Полоска формы -->
-
-          <button class="photo-upload__button photo-upload__button--submit" type="submit">Запостить</button>
-          <button class="photo-upload__button photo-upload__button--reset" type="reset" disabled>Отмена</button>
-        </form>
+        <p class="photo-upload__description">Затми их всех!<br> Выкладывайте все, что накопилось на телефоне!</p>
+          <div class="photo-upload__wrapper">
+            <div class="photo-upload__menu">
+              <img src="img/photo-road-mobile@1x.jpg" width="280" height="374" alt="Дорога">
+              <form class="photo-upload__form">
+                <div class="photo-upload__correction">
+                  <button class="photo-upload__button photo-upload__button--crop" type="button">Вырезать</button>
+                  <button class="photo-upload__button photo-upload__button--fill" type="button">Цвет</button>
+                  <button class="photo-upload__button photo-upload__button--contrast" type="button">Контраст</button>
+                <!-- Полоска формы -->
+                </div>
+                <div class="photo-upload__result">
+                  <button class="photo-upload__button photo-upload__button--submit" type="submit">Запостить</button>
+                  <button class="photo-upload__button photo-upload__button--reset" type="reset" disabled>Отмена</button>
+                </div>
+              </form>
+            </div>
+          </div>
       </section>
     </main>
 
     <footer class="page-footer">
-      <a class="page-footer__logo">
-        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="PINK">
-      </a>
-
+      <div class="page-footer__pink-logo">
+        <a>
+          <img src="../img/logo-pink-blue-mobile.svg" width="146" height="40" alt="PINK">
+        </a>
+      </div>
       <ul class="social-list">
         <li class="social-list__item social-list__item--twitter">
           <a href="#">Twitter</a>
@@ -180,13 +187,13 @@
           <a href="#">Youtube</a>
         </li>
       </ul>
-
-      <p class="developer">
-        Разработано
-        <a href="http://htmlacademy.ru">
-          <img class="developer__logo" src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
-        </a>
-      </p>
+      <div class="developer">
+        <span>Разработано
+          <a href="http://htmlacademy.ru">
+            <img class="developer__logo" src="img/logo-htmlacademy.svg" width="26" height="34" alt="HTML Academy">
+          </a>
+        </span>
+      </div>
     </footer>
   </body>
 </html>
