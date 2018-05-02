@@ -1,7 +1,19 @@
 /*блок inner-page-intro*/
 
 .inner-page-intro {
+  width: 175px;
+  margin: 0 auto;
   font-size: 24px;
   line-height: normal;
-  color: #ffffff;
+  font-weight: 300;
+  color: black;
+  text-align: center;
+  // цвет будет белым
+}
+
+@media (min-width: @tablet-width) {
+  .inner-page-intro {
+    width: 360px;
+    font-size: 50px;
+  }
 }

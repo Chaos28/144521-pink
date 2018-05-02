@@ -1,30 +1,78 @@
 /*блок contacts*/
 
 .contacts {
-  outline: 5px solid indigo;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .contacts__message {
+  width: 240px;
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
   color: #283645;
+  text-align: center;
 }
 
 .contacts__list {
+  padding: 0;
   list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 
 .contacts__title {
+  margin: 0;
   font-size: 18px;
   line-height: normal;
   font-weight: 700;
   color: #283645;
+  text-align: center;
 }
 
 .contacts__description {
+  margin: 0;
   font-size: 24px;
   line-height: normal;
   font-weight: 300;
   color: #d22856;
+  text-align: center;
+}
+
+.contacts__item {
+  margin-bottom: 28px;
+}
+
+@media (min-width: @tablet-width) {
+  .contacts__message {
+    width: 375px;
+    font-size: 40px;
+  }
+
+  .contacts__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .contacts__item {
+    width: 260px;
+    flex-grow: 1;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts__message {
+    width: 470px;
+    font-size: 50px;
+  }
+
+  .contacts__title {
+    margin-bottom: 20px;
+  }
+
+  .contacts__item--order {
+    order: 1;
+  }
 }

@@ -1,10 +1,24 @@
 /*блок form-field*/
 
+.form-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-field--checkbox {
+  flex-direction: row;
+}
+
+.form-field--radio {
+  flex-direction: row;
+}
+
 .form-field__label {
   font-size: 14px;
   line-height: 30px;
   text-transform: uppercase;
   color: #d22856;
+  // margin-left: 23px;
 }
 
 .form-field__input-text {
@@ -32,4 +46,39 @@
   line-height: 30px;
   text-transform: none;
   color: #283645;
+}
+
+@media (min-width: @tablet-width) {
+  .form-field {
+    flex-direction: row;
+  }
+
+  .form-field__input-text {
+    flex-grow: 1;
+  }
+
+  .form-field__label {
+    margin-right: 23px;
+  }
+
+  .form-field--contact-data {
+    flex-direction: column;
+    width: 500px;
+  }
+
+  .form-field--contact-data .form-field__label {
+    order: 1;
+    margin-left: 20px;
+    margin-top: 15px;
+  }
+
+  .form-field--contact-data .form-field__input-text {
+    margin-top: 35px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-field--contact-data {
+    width: 376px;
+  }
 }

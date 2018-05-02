@@ -1,12 +1,20 @@
 /*блок features*/
 
 .features {
-  outline: 5px solid pink;
   background-color: #f2f2f2;
 }
 
+
 .features__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+}
+
+.features__item {
+  width: 280px;
 }
 
 .features__title {
@@ -14,10 +22,44 @@
   line-height: 24px;
   font-weight: 700;
   color: #000000;
+  text-align: center;
 }
 
 .features__description {
   font-size: 14px;
   line-height: 24px;
   color: #283645;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .features__list {
+    align-items: flex-end;
+  }
+
+  .features__item {
+    width: 310px;
+  }
+
+  .features__title,
+  .features__description {
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .features__list {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .features__item {
+    width: 250px;
+  }
+
+  .features__title,
+  .features__description {
+    text-align: center;
+  }
 }

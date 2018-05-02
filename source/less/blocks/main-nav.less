@@ -1,11 +1,6 @@
 .main-nav {
-  /*background-image:
-    url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-repeat:
-    no-repeat,
-    no-repeat;*/
-  outline: 5px solid red;
+  display: flex;
+  flex-direction: row;
   font-size: 18px;
   line-height: 32px;
   font-weight: 700;
@@ -15,8 +10,28 @@
 
 .main-nav__list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-.site-list__item a {
+.main-nav__item a {
   text-decoration: none;
+}
+
+@media (min-width: @desktop-width) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav {
+    font-size: 18px;
+    line-height: 18px;
+    font-weight: 400;
+  }
+
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    width: 620px;
+  }
 }

@@ -1,28 +1,67 @@
-/*блок download-menu*/
-
 .download-menu {
-  outline: 5px solid green;
-  /*background-image:
-    url("../img/iphone-hand-mobile@1x.png"),
-    url("../img/bg-back-mobile@1x.jpg");
-  background-repeat:
-    no-repeat,
-    no-repeat;*/
-  min-height: 271px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 280px;
   background-color: #1d2631;
+  min-height: 271px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
   color: #dfdfe0;
 }
 
-.download-menu__platform {
-  list-style: none;
+.download-menu__title {
+  display: none;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .download-menu__download-link {
+  min-width: 280px;
+  min-height: 55px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
   color: #ffffff;
+  border: 2px solid #ffffff;
+}
+
+.download-menu__platform {
+  min-width: 280px;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+}
+
+.download-menu__description {
+  width: 230px;
+  height: auto;
+  text-align: center;
+}
+
+@media (min-width: @tablet-width) {
+  .download-menu {
+    align-items: flex-start;
+  }
+
+  .download-menu__title {
+    display: block;
+    font-size: 40px;
+    width: 200px;
+    line-height: normal;
+    text-align: center;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .download-menu__title {
+    font-size: 50px;
+    width: 240px;
+  }
 }
