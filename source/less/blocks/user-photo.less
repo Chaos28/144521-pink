@@ -1,5 +1,10 @@
 /*блок user-photo*/
 
+.user-photo {
+  display: flex;
+  flex-direction: column;
+}
+
 .user-photo__author {
   font-size: 14px;
   line-height: 24px;
@@ -39,8 +44,25 @@
   color: #d22856;
 }
 
+.user-photo--panorama {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+}
+
+.user-photo__description--first-description {
+  background-color: #f2f2f2;
+  margin: 0;
+  box-sizing: border-box;
+  width: 280px;
+  padding-left: 18px;
+  padding-top: 25px;
+}
+
 @media (min-width: @tablet-width) {
   .user-photo__description--first-description {
+    width: 620px;
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -52,5 +74,11 @@
 
   .user-photo__like-form--first-form {
     margin-right: 27px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .user-photo__description--first-description {
+    width: 940px;
   }
 }

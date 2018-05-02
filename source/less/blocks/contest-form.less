@@ -8,8 +8,6 @@
 .contest-form__group {
   padding: 0;
   margin: 0;
-  display: flex;
-  flex-direction: column;
   border: none;
 }
 
@@ -37,8 +35,10 @@
   visibility: hidden;
 }
 
-.contest-form__group.contest-form__group--submit {
+.contest-form__group--submit {
   background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
 }
 
 .contest-form__important {
@@ -123,6 +123,10 @@
 
   .contest-form__group--contacts {
     width: 940px;
+  }
+
+  .contest-form__group-wrapper {
+    display: flex;
     flex-direction: row;
   }
 
