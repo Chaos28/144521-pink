@@ -47,25 +47,58 @@
   color: #ffffff;
   padding: 0;
   margin: 0;
-  margin-bottom: 40px;
 }
 
 .download-menu__download-link {
-  min-width: 280px;
-  min-height: 55px;
+  display: block;
+  // min-width: 300px;
+  // min-height: 55px;
+  padding: 15px 35px;
   font-size: 18px;
   line-height: 18px;
   font-weight: 700;
+  text-decoration: none;
   color: #ffffff;
-  border: 2px solid #ffffff;
+  border: 3px solid #ffffff;
+  border-radius: 25px;
+  margin-bottom: 32px;
 }
 
 .download-menu__platform {
-  min-width: 280px;
+  width: 210px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 26px;
   padding: 0;
   list-style: none;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+}
+
+.download-menu__item {
+  display: block;
+
+  &--apple {
+    background-image: url("../img/logo-apple.svg");
+    background-repeat: no-repeat;
+    width: 47px;
+    height: 56px;
+  }
+
+  &--android {
+    background-image: url("../img/logo-android.svg");
+    background-repeat: no-repeat;
+    width: 43px;
+    height: 47px;
+  }
+
+  &--microsoft {
+    background-image: url("../img/logo-microsoft.svg");
+    background-repeat: no-repeat;
+    width: 44px;
+    height: 41px;
+  }
 }
 
 .download-menu__description {
@@ -96,7 +129,7 @@
   }
 
   .download-menu__applications {
-    width: 300px;
+    width: 320px;
   }
 
   .download-menu__container {
@@ -107,9 +140,19 @@
     display: block;
     font-size: 40px;
     width: 200px;
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
     line-height: normal;
     text-align: center;
+  }
+
+  .download-menu__download-link {
+    margin-bottom: 46px;
+  }
+
+  .download-menu__description {
+    font-size: 18px;
   }
 }
 
@@ -125,8 +168,18 @@
     }
   }
 
+  .download-menu__applications {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
   .download-menu__title {
     font-size: 50px;
     width: 240px;
+    margin-bottom: 40px;
+  }
+
+  .download-menu__download-link {
+    margin-bottom: 67px;
   }
 }
